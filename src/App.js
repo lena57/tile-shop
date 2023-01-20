@@ -101,14 +101,17 @@ function App() {
 
       <p><b>Area, in sq:</b> {areaTotal > 0 ? areaTotal : 0} </p>
 
-      {sellOption === 'tile' ? <p><b>Tiles Amount:</b> {tileCount > 0 ? tileCount : 0}</p> :
-        <p><b>Box Amount:</b> {boxCount > 0 && boxCount !== Infinity ? boxCount : 0}</p>}
+      {sellOption === 'Select' || sellOption === 'tile' ? <p><b>Tiles Amount:</b> {tileCount > 0 ? tileCount : 0}</p> :
+        <><p><b>Tiles Amount:</b> {tileCount > 0 ? tileCount : 0}</p>
+
+          <p><b>Box Amount:</b> {boxCount > 0 && boxCount !== Infinity ? boxCount : 0}</p></>}
 
       <p><b>Price, $:</b> {price > 0 && price !== Infinity ? price : 0} </p>
 
 
     </div>
-  );
+  )
+    ;
 }
 
 export default App;
