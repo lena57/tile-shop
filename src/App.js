@@ -67,9 +67,7 @@ function App() {
         <input type="number" className="form-control"
                aria-describedby="autoSizingInput"
                value={tileHeight} onChange={(e) => setTileHeight(+e.target.value)}/>
-
       </div>
-
 
       <div className="input-group mb-3 w-25 p-3">
         <label className="input-group-text" htmlFor="autoSizingInput">
@@ -92,7 +90,6 @@ function App() {
                  aria-describedby="autoSizingInput"
                  value={numberTilesPerBox} onChange={(e) => setNumberTilesPerBox(+e.target.value)}/>
         </div>}
-
 
       <div className="input-group mb-3 w-25 p-3">
         <label className="input-group-text" htmlFor="autoSizingInput">
